@@ -1,43 +1,45 @@
 # VibeVersion: Version your vision.
 
-The Vibe Coding Revolution Needs a New Kind of Version Control
+The Vibe Coding Revolution Demands a New Kind of Version Control.
 
-Vibe Coding is transforming how we build. It's an innovative development style where you collaborate directly with AI, guiding it through natural language prompts to generate and refine code. This marks a significant shift from explicit programming to **intent-driven development**, where AI autonomously modifies multiple components simultaneously based on your abstract input.
+Vibe Coding marks a **paradigm shift** to **intent-driven development**. You collaborate directly with AI, guiding it through natural language prompts to generate and refine code. The AI often works autonomously, making broad, cross-component modifications based on your abstract input, ushering in an era of **exploratory programming**.
 
-This revolutionary approach presents unique challenges for traditional version control systems like Git:
+While Git remains a powerful tool for traditional source code management and collaboration, Vibe Coding's unique dynamics expose fundamental mismatches with Git's core assumptions. **VibeVersion is not intended to replace Git**, but rather to provide the essential, specialized layer needed to manage the nuances of human-AI collaborative development, working seamlessly alongside existing Git workflows.
 
-* **Philosophical Mismatch**: Git assumes human-driven, granular changes, focusing on "meaningful commit units." Vibe Coding, however, involves AI making broad, often ambiguous, or exploratory changes across components from a single instruction. This fundamental difference leads to a diluted sense of "what" and "why" in Git's history.
-* **Chaotic & Noisy History**: AI's frequent, small modifications, instant rollbacks, and experimental changes clash with Git's goal of an organized, linear history. The result is a commit log filled with "AI auto-updates" and fragmented changes, making it incredibly difficult to trace original intent or debug.
-* **Invisible Progress**: How do you truly visualize your project's evolution when the core isn't just lines of code, but the continuous dialogue with your AI partner? Git struggles to convey the story of iterative prompting and AI responses.
-* **Bridging Human & AI**: Integrating your own manual refinements into an AI-driven workflow becomes cumbersome, lacking clear distinction and traceability between human interventions and AI's outputs.
+This revolutionary approach fundamentally clashes with the core assumptions of traditional version control systems like Git:
 
-**VibeVersion** is built from the ground up to solve these problems, designed specifically for the fluid, **intent-driven** and **exploratory** world of Vibe Coding.
+* **Philosophical Mismatch**: Git's strength lies in tracking human-driven, granular changes, built around the concept of "meaningful commit units." Vibe Coding, however, involves AI making sweeping, often experimental, and sometimes ambiguous changes across the codebase from a single instruction. This creates a profound disconnect in understanding the "what" and "why" within Git's history.
+* **Chaotic & Noisy History**: AI's frequent, small modifications, instant rollbacks, and rapid experimentation lead to a commit history filled with "AI auto-updates" and fragmented changes. This results in **"noisy history"** where tracing original intent or debugging becomes a significant challenge, akin to navigating a "spaghetti branch" of countless minor revisions.
+* **Invisible Progress**: How do you truly visualize your project's evolution when the core isn't just lines of code, but the continuous, iterative dialogue with your AI partner? Git struggles to convey this narrative of evolving intent and AI response.
+* **Bridging Human & AI**: Integrating your own precise manual refinements into an AI-driven workflow becomes cumbersome, lacking clear distinction and easy traceability between human interventions and AI's outputs.
+
+**VibeVersion** is engineered from the ground up to resolve these conflicts, designed specifically for the fluid, **intent-driven**, and **exploratory** nature of Vibe Coding.
 
 ## How VibeVersion Transforms Your Workflow
 
 VibeVersion shifts the focus from managing mere code changes to **versioning your entire creative process** with AI.
 
-* **Prompt-Centric History**: Every instruction you give your AI, every prompt, becomes a first-class citizen in your project's history. Link your prompts directly to the code they generate, ensuring you always know the "why" behind the "what." This makes your history meaningful, not just a series of code diffs.
-* **Session-Based Workflow**: Organize your development journey into "sessions" – distinct periods of focused work with a clear intent. This supports Vibe Coding's **iterative and exploratory nature**, allowing you to easily revisit, branch from, or discard experimental paths without polluting your main history.
-* **Unified Project Traceability**: Beyond just code, VibeVersion tracks and links all your project assets: prompts, AI-generated code, configurations, design documents generated by AI, and even your test cases. See the complete lineage of any feature and understand its **semantic evolution**.
-* **Seamless Human-AI Collaboration**: Integrate your manual code refinements effortlessly. VibeVersion clearly distinguishes human-made changes from AI-generated ones, preserving the clarity of your project's evolution and allowing for easy **post-hoc commentary and organization**.
-* **Intuitive Visual Timeline**: Forget cryptic commit messages. Experience your project's history as a living timeline, showcasing key decisions, AI interactions, and the precise moment your vision came to life, making the abstract concepts of intent and session tangible.
+* **Prompt-Centric & Intent-Driven History**: Every instruction you give your AI, every prompt, becomes a first-class citizen in your project's history. VibeVersion links your prompts directly to the code they generate, ensuring you always know the "why" (the intent) behind the "what" (the code). This makes your history meaningful and highly traceable.
+* **Session-Based Workflow for Exploratory Development**: Organize your development journey into distinct "sessions," each with a clear intent and timeframe. This structure inherently supports **exploratory programming**, allowing you to easily revisit, branch from, or discard experimental paths with minimal overhead, preventing history pollution and reducing "commit anxiety."
+* **Unified Project Traceability with Semantic Understanding**: Beyond just code, VibeVersion tracks and links all your project assets: prompts, AI-generated code, configurations, and related documentation. It aims to incorporate **semantic understanding** of changes, allowing you to trace the conceptual evolution of features, not just textual diffs.
+* **Seamless Human-AI Collaboration**: Integrate your manual code refinements effortlessly. VibeVersion clearly distinguishes human-made changes from AI-generated ones within the history, preserving clarity and allowing for easy **post-hoc commentary and organization** of your interventions.
+* **Intuitive Visual Timeline**: Forget cryptic commit messages. Experience your project's history as a living, visual timeline, showcasing key decisions, AI interactions, and the precise moment your vision came to life. This makes the abstract concepts of intent and session tangible and easy to navigate.
 
 ---
 
 ## VibeVersion vs. Git: A Philosophical Divide
 
-Traditional Git excels at tracking human-driven, granular code changes. However, its core assumptions can become friction points in an AI-accelerated Vibe Coding workflow. VibeVersion addresses these directly:
+Traditional Git excels at tracking human-driven, granular code changes. However, its core assumptions create fundamental friction points in an AI-accelerated Vibe Coding workflow. VibeVersion directly addresses these:
 
 | Feature/Philosophy      | Git (Traditional VCS)                                      | VibeVersion (For Vibe Coding)                                 | Why it Matters for Vibe Coding                                   |
 | :----------------------- | :--------------------------------------------------------- | :------------------------------------------------------------ | :--------------------------------------------------------------- |
-| **Core Unit of Change** | **Commit**: A snapshot of code changes, often manual.      | **Prompt/Session**: An expression of intent, an AI interaction, or a focused human work unit. | Captures the *why* and the *process*, not just the *what*.      |
-| **History Focus** | **Code Diffs**: Tracks line-by-line changes over time.     | **Intent & Evolution**: Traces the unfolding vision, AI responses, and human refinements. | Provides semantic meaning and context to rapid AI-driven changes, avoiding noisy histories. |
-| **Change Granularity** | Often small, human-crafted increments.                      | Can be vast, broad, AI-generated sweeps or focused human tweaks. | Accommodates AI's broad refactors and micro-changes transparently without manual overhead. |
+| **Core Unit of Change** | **Commit**: A snapshot of code changes, often manual.      | **Prompt/Session**: An expression of intent, an AI interaction, or a focused human work unit. | Captures the *why* (intent) and the *process*, not just the *what*.      |
+| **History Focus** | **Code Diffs**: Tracks line-by-line changes over time.     | **Intent & Evolution**: Traces the unfolding vision, AI responses, and human refinements. | Provides semantic meaning and context, transforming noisy history into a clear narrative. |
+| **Change Granularity** | Often small, human-crafted increments.                      | Can be vast, broad, AI-generated sweeps or focused human tweaks. | Accommodates AI's broad refactors and micro-changes transparently without manual overhead or complex rebasing. |
 | **Collaboration Model** | Human-to-human code sharing and merging.                    | Human-AI partnership, with AI as a first-class collaborator.   | Built for the conversational, iterative nature of AI development. |
-| **Traceability** | Code changes traced to commit messages and authors.         | Code traced to its originating prompt, session, and developer's original intent. | Essential for understanding AI output, debugging hallucinations, and refining prompts. |
-| **Exploratory Workflow** | Branching/reverting can be cumbersome; history accumulates. | Sessions enable fearless experimentation and easy discarding/reversion of trials. | Encourages rapid iteration and reduces "commit anxiety" for AI experiments. |
-| **Visibility of Progress**| Primarily through `git log` and diff tools.                 | Intuitive visual timelines showing the "story" of development, making abstract concepts tangible. | Makes complex AI-driven evolution immediately comprehensible.    |
+| **Traceability** | Code changes traced to commit messages and authors.         | Code traced to its originating prompt, session, and developer's explicit intent. | Essential for understanding AI output, debugging hallucinations, and refining prompts. |
+| **Exploratory Workflow** | Branching/reverting can be cumbersome; history accumulates. | Sessions enable fearless experimentation and easy discarding/reversion of trials. | Encourages rapid iteration and reduces "commit anxiety" inherent in exploratory AI work. |
+| **Visibility of Progress**| Primarily through `git log` and diff tools.                 | Intuitive visual timelines showing the "story" of development, making abstract concepts tangible. | Makes complex AI-driven evolution immediately comprehensible and navigable.    |
 
 ---
 
@@ -66,6 +68,9 @@ vv revert <session_id_or_prompt_version>
 
 # See your project's history as a linear timeline of sessions and prompts
 vv history --timeline
+
+# Export the current VibeVersion state as a clean Git commit
+vv export-to-git "Integrate recommendation engine feature"
 ```
 
 ---
